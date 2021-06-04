@@ -1,0 +1,95 @@
+//user
+{
+    "_id": "auto",
+    "email": "string",
+    "password": "string", //hash
+    "fname": "string",
+    "lname": "string",
+    "age": "string",
+    "date_of_birth": "date",
+    "sex": "string",
+    "address": { //Object 
+        "number": "string",
+        "room": "string",
+        "building": "string",
+        "moo": "string",
+        "road": "string",
+        "alley": "string",
+        "province": "string",
+        "district": "string",
+        "subdistrict": "string",
+        "postal": "string",
+    },
+    "token_remember": "string",
+    "soc_id": "string",
+    "soc_type": "string",
+    "createdAt": "timestamp",
+    "updatedAt": "timestamp",
+},
+// pet category dynamic
+{
+    "_id": "auto",
+    "name": "string",
+    "createdBy": "Object ID",
+    "updatedBy": "Object ID",
+    "createdAt": "timestamp",
+    "updatedAt": "timestamp",
+},
+//card
+{
+    "_id": "auto",
+    "title": "string",
+    "img": [{ //array obj
+            "id": "string", //uuid
+            "name": "string",
+            "available": "boolean"
+        },
+        {
+            "id": "string", //uuid
+            "name": "string",
+            "available": "boolean"
+        }
+    ],
+    "description": "string",
+    "location": {
+        "lat": "string",
+        "long": "string",
+        "radius": "double ", //ขอบเขตการค้นหา
+    },
+    "type": "string",
+    // "status": "string", //success, wait,fail
+    "status": {
+        "name": "string", //checking//approved//reject//inProgress//success//expire
+        "reason": "string",
+    },
+    "expire_date": "timestamp" ,
+    "category_id": "Object ID", // ref to category
+    "createdBy": "Object ID",
+    "updatedBy": "Object ID",
+    "createdAt": "timestamp",
+    "updatedAt": "timestamp",
+},
+
+//blogs & knowledge
+{
+    "_id": "auto",
+    "title": "string",
+    "img": { //array obj , img for title
+        "id": "string", //uuid
+        "name": "string",
+        "available": "boolean"
+    },
+    "description": "string", //wysiwyg editor
+    "type": "string",
+    // "status": "string", //success, wait,fail
+    "status": {
+        "name": "string", //checking//approved//reject//inProgress//success//expire
+        "reason": "string",
+    },
+    "publish_date": "timestamp",
+    "expire_date": "timestamp", 
+    "createdBy": "Object ID",
+    "updatedBy": "Object ID",
+    "createdAt": "timestamp",
+    "updatedAt": "timestamp",
+}

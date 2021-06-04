@@ -1,0 +1,81 @@
+a:hover, a:focus {
+    text-decoration: none;
+	outline: none;
+    color: palevioletred;
+}
+.swiper-container {
+    width: 100%;
+    height: 50vh;
+}
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* Slide captions */
+.slide-captions {
+    position: absolute;
+    max-width: 30%;
+    top: 35%;
+    left: 20%;
+    color: #FFF;
+    z-index: 999;
+    transform: translateY(-50%);
+    
+}
+.slide-captions-buttom {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    color: #FFF;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+.slide-captions-image {
+    position: absolute;
+    top: 35%;
+    /* left: 20%; */
+    right:20%;
+    color: #FFF;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+.slide-captions .current-title {
+    font-size: 48px;
+    /* max-width: 50%; */
+}
+.slide-captions .current-subtitle {
+    font-size: 28px;
+    /* max-width: 50%; */
+}   
+/* Swiper arrows */
+.swiper-pagination-bullet-active {
+    background-color: palevioletred;
+}
+.slideDesMainStyle{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius: 20px;
+    border: 1px solid palevioletred;
+    color: palevioletred;
+  }
+.slideImageMainStyle{
+    width: 500px;
+    height: 300px;
+}
